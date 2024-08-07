@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #3c8c40;
+  --black: #191919;
+  --white: #fff;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.content .text {
+  padding: 15px;
+}
+
+.content h1 {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: fantasy;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.text .password {
+  display: grid;
+  grid-template-columns: auto min-content;
+}
+
+.password input {
+  padding: 7px;
+  background-color: #ddd;
+  color: var(--black);
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 400;
+}
+.password button {
+  background-color: var(--main);
+  padding: 10px 20px;
+  color: var(--white);
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.password button:hover {
+  background-color: #449d48;
+}
+
+.text .range {
+  margin: 10px 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr min-content;
+}
+
+.text .range span {
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  background-color: #ddd;
+}
+
+.text .options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.text .options .option label {
+  background-color: #ddd;
+  padding: 8px;
+  display: flex;
+  display: block;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+input {
+  accent-color: var(--main);
+}
+
+.generate {
+  width: 100%;
+  margin-top: 20px;
+  padding: 8px;
+  background-color: var(--main);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.generate:hover {
+  background-color: #449d48;
+}
